@@ -19,6 +19,9 @@ sources = tm_bucket.h \
     PriorityQueue.c
 EXTRA_DIST = COPYING LICENSE
 
+AM_CPPFLAGS=-fPIC
+AM_LDFLAGS=-fPIC
+
 noinst_LTLIBRARIES = libtreematch.la
 libtreematch_la_SOURCES = $(sources)
 libtreematch_la_LDFLAGS = -static
